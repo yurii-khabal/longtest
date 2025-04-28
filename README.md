@@ -13,7 +13,7 @@ depending on the MODE until you stop it.
 # Usage
 
 - go build -o longtest
-- URL='<base url like http://localhost:1234>' MODE=<MODE LIST LMZDIC>ORG_ID=ORG,IDS,BY,COMMA DSN=c-clickhouse://x-dsn/db ./longtest
+- `URL='<base url like http://localhost:1234>' MODE=<MODE LIST LMZDIC> ORG_ID=ORG,IDS,BY,COMMA DSN=c-clickhouse://x-dsn/db ./longtest`
 
 ## MODE LIST
 
