@@ -24,3 +24,4 @@ depending on the MODE until you stop it.
 - I - for influx logs
 - C - for a lot of small simultaneous loki log request to check batching
 - S - for servicegraph testing
+- J - for plain text logs

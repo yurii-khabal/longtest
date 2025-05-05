@@ -176,6 +176,18 @@ func writeTest() {
 			})
 			pqt.Run()
 		}
+		if strings.Contains(os.Getenv("MODE"), "J") {
+			fmt.Println("Run plain text sender test")
+			plainTextSender := NewPlainTextSender(LogSenderOpts{
+				ID:         "plaintext",
+				Containers: names,
+				Lines:      logs,
+				LinesPS:    50,
+				URL:        os.Getenv("URL"),
+				Headers:    headers,
+			})
+			plainTextSender.Run()
+		}
 	}
 	t := time.NewTicker(time.Second)
 	go func() {
